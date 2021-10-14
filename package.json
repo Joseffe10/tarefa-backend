@@ -22,7 +22,8 @@
       "typescript": "3.3.3333"
    },
    "scripts": {
+      "build": "tsc",
       "dev": "nodemon src/index.ts",
-      "start": "ts-node src/index.ts"
+      "start": "node dist/server.js"
    }
 }
