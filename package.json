@@ -2,6 +2,7 @@
    "name": "backend",
    "version": "0.0.1",
    "description": "Awesome project developed with TypeORM.",
+   "license": "MIT",
    "devDependencies": {
       "@types/cors": "^2.8.12",
       "@types/node": "^8.0.29",
@@ -24,6 +25,6 @@
    "scripts": {
       "build": "tsc",
       "dev": "nodemon src/index.ts",
-      "start": "node dist/server.js"
+      "start": "node dist/index.js"
    }
 }
