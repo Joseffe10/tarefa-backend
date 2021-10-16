@@ -6,7 +6,7 @@ import * as cors from 'cors';
 import routes from "./routes";
 
 const app = express()
-createConnection()
+//createConnection()
 
 app.use(cors())
 app.use(bodyParser.json())
