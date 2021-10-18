@@ -7,12 +7,12 @@
    "database": "gpazrbku",
    "synchronize": true,
    "logging": true,
-   "entities": [
+   "entities": [ "./src/entity/*",
       "src/entity/**/*{.ts,.js}",
       "dist/src/entity/**/*{.ts,.js}",
       "../dist/src/entity/*"
    ],
-   "migrations": [
+   "migrations": [ "./src/migration/*",
       "src/migration/**/*.ts"
    ],
    "subscribers": [
