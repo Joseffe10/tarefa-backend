@@ -7,7 +7,7 @@ import cors from 'cors';
 import routes from "./routes";
 
 const app = express()
-app.use(express.static(__dirname + '/dist'))
+app.use(express.static(__dirname + '/dist/src/'))
 //createConnection()
 app.use(cors())
 app.use(bodyParser.json())
