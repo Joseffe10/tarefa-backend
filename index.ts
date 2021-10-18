@@ -4,7 +4,7 @@ import { createConnection } from "typeorm";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from 'cors';
-import routes from "./routes";
+import routes from "./src/routes";
 
 const app = express()
 createConnection()
