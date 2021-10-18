@@ -26,6 +26,7 @@
       "build": "tsc -p .",
       "dev": "nodemon src/index.ts",
       "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-      "start": "node index.js"
+      "start": "node src/index.js",
+      "postinstall": "tsc && mv -i -v public dist/ && rm -v -rf src"
    }
 }
