@@ -10,16 +10,16 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(routes)
 
+app.listen(process.env.PORT || 3333, () => {
+  console.log('🏃 Running Server');
+})
+
 database
   .createDatabaseConnection("local")
   .then(async (connection) => {
-    // connection.dropDatabase()
-    app.listen(process.env.PORT || 3333, () => {
-      console.log(
-        `Connected on "local" database and listening on port 3333.`
-      )
-    })
+    console.log('Conectado com o BD Postgres!')
   })
   .catch((error) => {
     console.log(error)
   })
+

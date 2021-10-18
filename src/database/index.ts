@@ -26,7 +26,7 @@ class TypeORMConnection {
         synchronize: false,
         logging: true,
         entities: ['./src/entity/*'],
-        migrations: ['./dist/src/migration/*'],
+        migrations: ['./src/migration/*'],
       }
     }
     this._connection = await createConnection(connections[databaseProfileName])
