@@ -26,6 +26,6 @@
       "build": "tsc -p .",
       "dev": "nodemon src/index.ts",
       "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-      "start": "node src/index.js"
+      "start": "node index.js"
    }
 }
