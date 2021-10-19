@@ -6,10 +6,9 @@
    "password": "5ldV40O2okfOyCYOG333z5NWGC-ywnlH",
    "database": "gpazrbku",
    "synchronize": true,
-   "logging": true,
-   "entities": [ 
-      "dist/src/entity/**/*.js",
-      "src/entity/**/*.ts"
+   "logging": false,
+   "entities": [
+      "./src/entity/*"
    ],
    "migrations": [
       "src/migration/**/*.ts"
