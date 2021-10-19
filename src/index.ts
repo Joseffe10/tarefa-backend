@@ -1,14 +1,17 @@
 import "reflect-metadata";
 import database from "./database";
-import { createConnection } from "typeorm";
+//import { createConnection } from "typeorm";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from 'cors';
 import routes from "./routes";
 
+var path = require('path')
+var serveStatic = require('serve-static')
+
 const app = express()
 //createConnection()
-app.use(express.static('dist'));
+app.use(serveStatic(path.join(__dirname, 'dist')))
 app.use(cors())
 app.use(bodyParser.json())
 app.use(routes)
