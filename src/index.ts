@@ -8,6 +8,7 @@ import routes from "./routes";
 
 const app = express()
 //createConnection()
+app.use(express.static('dist'));
 app.use(cors())
 app.use(bodyParser.json())
 app.use(routes)
